@@ -1,0 +1,14 @@
+# Archivo para guardar los alias
+
+alias actualizar="sudo apt update && sudo apt upgrade"
+alias apagar="shutdown -P now"
+alias l="ls -l"
+alias reiniciar="shutdown -r now"
+alias start="npm start"
+alias pull="git pull"
+alias push="git push"
+alias build="npm run build"
+alias commit="git commit"
+alias add="git add"
+alias init="git init"
+alias build:dev="npm run build:dev"
