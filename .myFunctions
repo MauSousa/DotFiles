@@ -1,0 +1,30 @@
+# Fuction to compile and execute cpp programs
+function compile-cpp(){
+    local obj="${1}.cpp"
+    local name="${2}"
+    g++ "$obj" -o "$name"
+    ./"$name"
+}
+
+# Fuction to compile and execute c programs
+function compilar-c(){
+    local file="${1}.c"
+    local name="${2}"
+    g++ "$file" -o "$name"
+    ./"$name"
+}
+
+# Fuction to compile and execute java programs
+function compile-java(){
+    local file="${1}.java"
+    javac "$file"
+	java "$file"
+}
+
+# Fuction to create and enter a directory
+function crear-entrar(){
+    local directorio="${1}"
+    mkdir "$directorio"
+    cd "$directorio"
+}
+
